@@ -1,0 +1,159 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', serif;
+    background-color: #c8d8e4;
+    margin-bottom: 100px;
+}
+
+header{
+  /* height: 180px; */
+  background-color: #2C4762;
+  color: #A1ACD1;
+  font-size: 40px;
+  /* border: 3px #BBBBBB;
+  border-style: solid none; */
+}
+
+#header{
+  position: sticky; top: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about{
+  font-size: 18px;
+}
+
+#contents{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: left;
+  margin-bottom: 30px;
+}
+
+.content{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#instructions, #upload, #retrieve{
+  /* border: 2px solid black; */
+  width: 350px;
+  height: 400px;
+}
+
+#instructions{
+  /* background-color: lightblue; */
+  text-align: left;
+  font-size: 22px;
+}
+
+.list{
+  margin-right: 20px;
+}
+
+.line{
+  margin-bottom: 10px;
+}
+
+#upload{
+  background-color: #FF1493;
+}
+
+.choose_file{
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid grey;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  font-size: 17px;
+}
+
+#submit_button{
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid grey;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  font-size: 17px;
+  vertical-align: middle;
+}
+
+#retrieve{
+  background-color: #800080;
+}
+
+/* .center{
+
+} */
+
+#crop_button{
+  margin-top: 20px;
+  width:200px;
+  height: 30px;
+  font-size:20px;
+  background-color: pink;
+}
+
+footer{
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  padding-left:20px;
+  background-color: #2C4762;
+  color: #A1ACD1;
+}
+
+/*  responsive */
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .pc-only {
+   display: none;
+ }
+
+ #header{
+   position: absolute;
+   width: 100%;
+ }
+
+ #contents{
+   margin-top: 200px;
+ }
+
+ #instructions, #upload, #retrieve{
+   width: 90%;
+   height: 200px;
+ }
+
+
+ #instructions{
+   font-size: 12px;
+ }
+
+ .sp-only {
+   display: block;
+ }
+ .title{
+   font-size: 20px;
+ }
+ .about{
+   font-size: 10px;
+ }
+
+
+
+
+
+
+
+}

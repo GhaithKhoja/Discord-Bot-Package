@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+    </head>
+    <body>
+      <header id="header">
+        <strong class="title">Welcome to ML</strong>
+        <br>
+        <span class="about">Returns an image with the cropped head/face with a transparent background.</span>
+      </header>
+      <div id="contents">
+
+        <div class="content">
+          <h2>Instructions</h2>
+          <div id="instructions">
+            <ol class="list">
+              <li class="line">Press 'Choose file' button to select an image to upload.</li>
+              <li class="line">Press 'Start' button to start cropping</li>
+              <li class="line">After 'Download' button appears, press it to download the new image.</li>
+            </ol>
+          </div>
+        </div>
+        <div style="text-align: left;">
+          <h2>&nbsp</h2>
+          <img id="output" width="200"/>
+          <div><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></div>
+          <div class="choose_file"><label for="file">Choose file</label></div>
+          <br>
+          <button id="submit_button">Start</button>
+        </div>
+
+        <div class="content">
+          <h2>Retrieve</h2>
+          <!-- <div id="retrieve">
+          </div> -->
+        </div>
+
+        <!-- <input type="file" id="input"> -->
+
+
+      </div>
+      <footer>
+        <div>Copyright &copy; 2021 Team ARG</div>
+        </footer>
+
+
+
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+  // image.src is the image
+};
+
+// const selectedFile = document.getElementById('input').files[0];
+</script>
+
+    </body>
+
+</html>
