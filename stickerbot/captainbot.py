@@ -285,5 +285,5 @@ async def on_message(message):
             await message.reply(content ='Hi!') 
         elif message.author.id == 263306098512101376:
             await message.reply(content = 'lol')
-
-bot.run('ODk5MDYxNTE1MjkyOTA1NTAy.YWtSSQ.hbz4dGWAS2l9PtGH9oRnQOzqJkg')
+TOKEN = ""
+bot.run(TOKEN)
