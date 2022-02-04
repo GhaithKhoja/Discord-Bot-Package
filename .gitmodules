@@ -1,3 +1,9 @@
 [submodule "musicbot"]
 	path = musicbot
 	url = https://github.com/GhaithKhoja/musicbot.git
+[submodule "melon_ml"]
+	path = melon_ml
+	url = https://github.com/mhalhamdan/melon_ml
+[submodule "ConversationBot"]
+	path = ConversationBot
+	url = https://github.com/mhalhamdan/ConversationBot
